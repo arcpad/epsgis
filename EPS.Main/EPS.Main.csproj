@@ -1,0 +1,512 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8DB60BEA-B126-4ACD-ABF2-7CC17A182AAE}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ApplicationIcon>App.ico</ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>epsgis</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>EPS</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>EPS.Program</StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <TargetFrameworkProfile />
+    <PublishUrl>http://localhost/MapAndPageLayoutSynchApp/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <OutputPath>..\bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <OutputPath>..\bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Castle.DynamicProxy, Version=1.1.5.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>docs\3rdPart\IBatisNet\Castle.DynamicProxy.dll</HintPath>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.ADF.Local, Version=10.0.0.2168, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.AnalysisTools, Version=10.0.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.AxControls">
+      <Name>ESRI.ArcGIS.AxControls</Name>
+      <HintPath>..\..\..\..\..\arcgis\DotNet\ESRI.ArcGIS.AxControls.dll</HintPath>
+      <AssemblyFolderKey>hklm\dn\arcgis desktop</AssemblyFolderKey>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.Carto">
+      <Name>ESRI.ArcGIS.Carto</Name>
+      <HintPath>..\..\..\..\arcgis\DotNet\ESRI.ArcGIS.Carto.dll</HintPath>
+      <AssemblyFolderKey>hklm\dn\arcgis desktop</AssemblyFolderKey>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.Controls">
+      <Name>ESRI.ArcGIS.Controls</Name>
+      <HintPath>..\..\..\..\arcgis\DotNet\ESRI.ArcGIS.Controls.dll</HintPath>
+      <AssemblyFolderKey>hklm\dn\arcgis desktop</AssemblyFolderKey>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.Display">
+      <Name>ESRI.ArcGIS.Display</Name>
+      <HintPath>..\..\..\..\arcgis\DotNet\ESRI.ArcGIS.Display.dll</HintPath>
+      <AssemblyFolderKey>hklm\dn\arcgis desktop</AssemblyFolderKey>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.GeoAnalyst, Version=10.0.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.Geodatabase">
+      <Name>ESRI.ArcGIS.Geodatabase</Name>
+      <HintPath>..\..\..\..\arcgis\DotNet\ESRI.ArcGIS.Geodatabase.dll</HintPath>
+      <AssemblyFolderKey>hklm\dn\arcgis desktop</AssemblyFolderKey>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.Geometry">
+      <Name>ESRI.ArcGIS.Geometry</Name>
+      <HintPath>..\..\..\..\arcgis\DotNet\ESRI.ArcGIS.Geometry.dll</HintPath>
+      <AssemblyFolderKey>hklm\dn\arcgis desktop</AssemblyFolderKey>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.Geoprocessing, Version=10.0.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.Geoprocessor, Version=10.0.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.System">
+      <Name>ESRI.ArcGIS.System</Name>
+      <HintPath>..\..\..\..\arcgis\DotNet\ESRI.ArcGIS.System.dll</HintPath>
+      <AssemblyFolderKey>hklm\dn\arcgis desktop</AssemblyFolderKey>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.SystemUI">
+      <Name>ESRI.ArcGIS.SystemUI</Name>
+      <HintPath>..\..\..\..\arcgis\DotNet\ESRI.ArcGIS.SystemUI.dll</HintPath>
+      <AssemblyFolderKey>hklm\dn\arcgis desktop</AssemblyFolderKey>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.Version, Version=1.0.0.7, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="IBatisNet.Common, Version=1.6.2.0, Culture=neutral, PublicKeyToken=ed781d9fc396c6ca, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>docs\3rdPart\IBatisNet\IBatisNet.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="IBatisNet.Common.Logging.Log4Net, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>docs\3rdPart\IBatisNet\IBatisNet.Common.Logging.Log4Net.dll</HintPath>
+    </Reference>
+    <Reference Include="IBatisNet.DataAccess, Version=1.9.2.0, Culture=neutral, PublicKeyToken=ed781d9fc396c6ca, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>docs\3rdPart\IBatisNet\IBatisNet.DataAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="IBatisNet.DataMapper, Version=1.6.2.0, Culture=neutral, PublicKeyToken=ed781d9fc396c6ca, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>docs\3rdPart\IBatisNet\IBatisNet.DataMapper.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=1b44e1d426115821">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>docs\3rdPart\IBatisNet\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Windows.Forms.Ribbon35">
+      <HintPath>docs\3rdPart\System.Windows.Forms.Ribbon35.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Biz\ProjectEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Biz\ProjectEditForm.Designer.cs">
+      <DependentUpon>ProjectEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Biz\ProjectManageForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Biz\ProjectManageForm.Designer.cs">
+      <DependentUpon>ProjectManageForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Engine\Command\BufferAnalysis.cs" />
+    <Compile Include="Engine\TOC\LayerRendering.cs" />
+    <Compile Include="Engine\TOC\Renderer\RendererForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Engine\TOC\ZoomToLayer.cs" />
+    <Compile Include="Engine\TOC\LayerPropertiesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Engine\TOC\LayerPropertiesForm.Designer.cs">
+      <DependentUpon>LayerPropertiesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Engine\TOC\LayerSelectable.cs" />
+    <Compile Include="Engine\TOC\LayerVisibility.cs" />
+    <Compile Include="Engine\TOC\RemoveLayer.cs" />
+    <Compile Include="Engine\TOC\ScaleThresholds.cs" />
+    <Compile Include="Engine\TOC\LayerProperties.cs" />
+    <Compile Include="Engine\Utils\AnnotationUtils.cs" />
+    <Compile Include="Engine\Utils\DisplayUtils.cs" />
+    <Compile Include="Engine\Utils\GeoDbUtils.cs" />
+    <Compile Include="Engine\Utils\GeometryUtils.cs" />
+    <Compile Include="Engine\Utils\MapUtils.cs" />
+    <Compile Include="Engine\Utils\StyleUtils.cs" />
+    <Compile Include="Engine\Utils\SymbolUtils.cs" />
+    <Compile Include="Engine\Utils\VersionUtils.cs" />
+    <Compile Include="Stub\Class1.cs" />
+    <Compile Include="Stub\Class2.cs" />
+    <Compile Include="Tools\BufferAnalysisForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tools\BufferAnalysisForm.Designer.cs">
+      <DependentUpon>BufferAnalysisForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tools\IdentifyTool.cs" />
+    <Compile Include="Tools\Identify\FlashObjectsClass.cs" />
+    <Compile Include="Tools\Identify\IdentifyDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tools\Identify\IdentifyDialog.designer.cs">
+      <DependentUpon>IdentifyDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tools\Identify\LayerFeatureType.cs" />
+    <Compile Include="Tools\Identify\LayerFilterProperties.cs" />
+    <Compile Include="Tools\Identify\LayerIdentifiedResult.cs" />
+    <Compile Include="Utils\DbUtils.cs" />
+    <Compile Include="Main\AboutBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\AboutBox.designer.cs">
+      <DependentUpon>AboutBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main\LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\LoginForm.designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main\MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Content Include="App.ico" />
+    <Content Include="Mapper\User.map.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\SelectFeatures.cur" />
+    <None Include="Resources\IdentifyWindowShow16.png" />
+    <None Include="Resources\IdentifyTool16.png" />
+    <None Include="Resources\IdentifyTool.ico" />
+    <EmbeddedResource Include="Biz\ProjectEditForm.resx">
+      <DependentUpon>ProjectEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Biz\ProjectManageForm.resx">
+      <DependentUpon>ProjectManageForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Engine\TOC\Renderer\RendererForm.resx">
+      <DependentUpon>RendererForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tools\BufferAnalysisForm.resx">
+      <DependentUpon>BufferAnalysisForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tools\Identify\IdentifyDialog.resx">
+      <DependentUpon>IdentifyDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Resources\LandOutput16.png" />
+    <None Include="Resources\RasterImageOutput16.png" />
+    <None Include="Resources\CoordinateSystem16.png" />
+    <None Include="Resources\VersionManager16.png" />
+    <None Include="Resources\GISCheck16.png" />
+    <None Include="Resources\GIS2Db16.png" />
+    <None Include="Resources\DataTransform16.png" />
+    <None Include="Resources\CASS2Db16.png" />
+    <None Include="Resources\CADCheck16.png" />
+    <None Include="Resources\CAD2Db16.png" />
+    <None Include="Resources\Thesis2Db16.png" />
+    <None Include="Resources\ThesisDb32.png" />
+    <None Include="Resources\LogicDb32.png" />
+    <None Include="Resources\DirectoryMgr32.png" />
+    <None Include="Resources\PrintLayoutPagesSetUp32.png" />
+    <None Include="Resources\OutputRaster32.png" />
+    <None Include="Resources\OutputSelections32.png" />
+    <None Include="Resources\SimpleFind32.png" />
+    <None Include="Resources\BarCode32.png" />
+    <None Include="Resources\ServerArcGIS32.png" />
+    <None Include="Resources\EditorToolbarShow32.png" />
+    <None Include="Resources\SeeProject32.png" />
+    <None Include="Resources\IdentifyWindowShow32.png" />
+    <None Include="Resources\AttributeFind32.png" />
+    <None Include="Resources\SystemSet32.png" />
+    <None Include="Resources\LayerMgr32.png" />
+    <None Include="Resources\DisplayScale32.png" />
+    <None Include="Resources\DisplayCoor32.png" />
+    <None Include="Resources\DataType.png" />
+    <None Include="Resources\BizZoneSplit.png" />
+    <None Include="Resources\BizDbPolicy32.png" />
+    <None Include="Resources\AddLayer32.png" />
+    <None Include="Resources\UsersReg32.png" />
+    <None Include="Resources\DAGL.png" />
+    <None Include="Resources\ExpPrj32.png" />
+    <None Include="Resources\ImpPrj32.png" />
+    <None Include="Copy of log4Net.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="log4Net.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\wordtemplate32.png" />
+    <None Include="Resources\worddocument32.png" />
+    <None Include="Resources\word2003doc32.png" />
+    <None Include="Resources\unorderedlist16.png" />
+    <None Include="Resources\undo16.png" />
+    <None Include="Resources\underline16.png" />
+    <None Include="Resources\themefont.png" />
+    <None Include="Resources\textalignright16.png" />
+    <None Include="Resources\textalignleft16.png" />
+    <None Include="Resources\textalignjustify16.png" />
+    <None Include="Resources\textaligncenter16.png" />
+    <None Include="Resources\superindex16.png" />
+    <None Include="Resources\subindex16.png" />
+    <None Include="Resources\styleset16.png" />
+    <None Include="Resources\stylechange32.png" />
+    <None Include="Resources\style16.png" />
+    <None Include="Resources\strikethru16.png" />
+    <None Include="Resources\sort16.png" />
+    <None Include="Resources\send32.png" />
+    <None Include="Resources\select16.png" />
+    <None Include="Resources\saveas321.png" />
+    <None Include="Resources\saveas32.png" />
+    <None Include="Resources\save32.png" />
+    <None Include="Resources\save16.png" />
+    <None Include="Resources\replace16.png" />
+    <None Include="Resources\publish32.png" />
+    <None Include="Resources\printquick32.png" />
+    <None Include="Resources\printquick16.png" />
+    <None Include="Resources\printpreview32.png" />
+    <None Include="Resources\print321.png" />
+    <None Include="Resources\print32.png" />
+    <None Include="Resources\prepare32.png" />
+    <None Include="Resources\pastespecial16.png" />
+    <None Include="Resources\pastelink16.png" />
+    <None Include="Resources\paste321.png" />
+    <None Include="Resources\paste16.png" />
+    <None Include="Resources\paragraphspacing16.png" />
+    <None Include="Resources\pageblank16.png" />
+    <None Include="Resources\orderedlist16.png" />
+    <None Include="Resources\options16.png" />
+    <None Include="Resources\open32.png" />
+    <None Include="Resources\open16.png" />
+    <None Include="Resources\newdocument32.png" />
+    <None Include="Resources\multilevellist16.png" />
+    <None Include="Resources\italic16.png" />
+    <None Include="Resources\invisiblechars16.png" />
+    <None Include="Resources\indentincrease16.png" />
+    <None Include="Resources\indentdecrease161.png" />
+    <None Include="Resources\indentdecrease16.png" />
+    <None Include="Resources\hilight16.png" />
+    <None Include="Resources\goto16.png" />
+    <None Include="Resources\fontsizeincrease16.png" />
+    <None Include="Resources\fontsizedecrease16.png" />
+    <None Include="Resources\fontcolor16.png" />
+    <None Include="Resources\find32.png" />
+    <None Include="Resources\fill16.png" />
+    <None Include="Resources\exit16.png" />
+    <None Include="Resources\eraseformat16.png" />
+    <None Include="Resources\cut16.png" />
+    <None Include="Resources\copyformat16.png" />
+    <None Include="Resources\copy16.png" />
+    <None Include="Resources\close32.png" />
+    <None Include="Resources\casing16.png" />
+    <None Include="Resources\borderbottom16.png" />
+    <None Include="Resources\bold16.png" />
+    <None Include="Resources\addons32.png" />
+    <EmbeddedResource Include="App.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <None Include="Providers.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\MapPackageMPKFile.ico" />
+    <EmbeddedResource Include="Engine\TOC\LayerPropertiesForm.resx">
+      <DependentUpon>LayerPropertiesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\AboutBox.resx">
+      <DependentUpon>AboutBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OpenNewMapDocument.bmp" />
+    <Compile Include="assemblyinfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Engine\Map\ControlsSynchronizer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Engine\Maps.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Engine\Command\OpenNewMapDocument.cs" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SqlMap.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <None Include="Styles\ESRI.ServerStyle" />
+    <None Include="Styles\ESRI.style" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Configration\" />
+    <Folder Include="Engine\TOC\Properties\" />
+    <Folder Include="Security\" />
+    <Folder Include="Service\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\EPS.Common\EPS.Common.csproj">
+      <Project>{3E4B89A9-28A1-4FC7-968F-237BE55FC159}</Project>
+      <Name>EPS.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EPS.Data.Mgr\EPS.Data.Mgr.csproj">
+      <Project>{322D7078-CF5C-4757-90D2-01B002032C16}</Project>
+      <Name>EPS.Data.Mgr</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EPS.Data\EPS.Data.csproj">
+      <Project>{6321D249-9420-4A4C-88A0-AC2D6DD1C1BE}</Project>
+      <Name>EPS.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EPS.Utilities\EPS.Utilities.csproj">
+      <Project>{F9A27473-C275-4B48-A1F0-5D72B007C24F}</Project>
+      <Name>EPS.Utilities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

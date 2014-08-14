@@ -1,0 +1,5 @@
+D:\projects\清华山维\src\EPSGIS\Ribbon\bin\Debug\Ribbon.dll
+D:\projects\清华山维\src\EPSGIS\Ribbon\bin\Debug\Ribbon.pdb
+D:\projects\清华山维\src\EPSGIS\Ribbon\obj\Debug\ResolveAssemblyReference.cache
+D:\projects\清华山维\src\EPSGIS\Ribbon\obj\Debug\Ribbon.dll
+D:\projects\清华山维\src\EPSGIS\Ribbon\obj\Debug\Ribbon.pdb

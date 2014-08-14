@@ -1,0 +1,10 @@
+D:\projects\清华山维\src\CSharp\bin\Debug\qhgis.exe
+D:\projects\清华山维\src\CSharp\bin\Debug\qhgis.pdb
+D:\projects\清华山维\src\CSharp\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\projects\清华山维\src\CSharp\obj\x86\Debug\qhgis.csproj.ResolveComReference.cache
+D:\projects\清华山维\src\CSharp\obj\x86\Debug\com.qhsw.frmMain.resources
+D:\projects\清华山维\src\CSharp\obj\x86\Debug\com.qhsw.Properties.Resources.resources
+D:\projects\清华山维\src\CSharp\obj\x86\Debug\GenerateResource-ResGen.read.1.tlog
+D:\projects\清华山维\src\CSharp\obj\x86\Debug\GenerateResource-ResGen.write.1.tlog
+D:\projects\清华山维\src\CSharp\obj\x86\Debug\qhgis.exe
+D:\projects\清华山维\src\CSharp\obj\x86\Debug\qhgis.pdb

@@ -1,0 +1,10 @@
+D:\projects\清华山维\prototype\RibbonLib_v2.6\Ribbon\bin\Debug\Ribbon.dll
+D:\projects\清华山维\prototype\RibbonLib_v2.6\Ribbon\bin\Debug\Ribbon.pdb
+D:\projects\清华山维\prototype\RibbonLib_v2.6\Ribbon\obj\Debug\ResolveAssemblyReference.cache
+D:\projects\清华山维\prototype\RibbonLib_v2.6\Ribbon\obj\Debug\Ribbon.dll
+D:\projects\清华山维\prototype\RibbonLib_v2.6\Ribbon\obj\Debug\Ribbon.pdb
+D:\projects\清华山维\src\EPSGIS\Ribbon\bin\Debug\Ribbon.dll
+D:\projects\清华山维\src\EPSGIS\Ribbon\bin\Debug\Ribbon.pdb
+D:\projects\清华山维\src\EPSGIS\Ribbon\obj\Debug\ResolveAssemblyReference.cache
+D:\projects\清华山维\src\EPSGIS\Ribbon\obj\Debug\Ribbon.dll
+D:\projects\清华山维\src\EPSGIS\Ribbon\obj\Debug\Ribbon.pdb

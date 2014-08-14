@@ -1,0 +1,11 @@
+D:\projects\清华山维\src\EPSGIS\EPS.Data.Mgr\bin\Debug\EPS.Data.Mgr.dll
+D:\projects\清华山维\src\EPSGIS\EPS.Data.Mgr\bin\Debug\EPS.Data.Mgr.pdb
+D:\projects\清华山维\src\EPSGIS\EPS.Data.Mgr\bin\Debug\log4net.dll
+D:\projects\清华山维\src\EPSGIS\EPS.Data.Mgr\obj\Debug\ResolveAssemblyReference.cache
+D:\projects\清华山维\src\EPSGIS\EPS.Data.Mgr\obj\Debug\EPS.Data.Mgr.dll
+D:\projects\清华山维\src\EPSGIS\EPS.Data.Mgr\obj\Debug\EPS.Data.Mgr.pdb
+D:\projects\清华山维\src\EPS.Data.Mgr\bin\Debug\EPS.Data.Mgr.dll
+D:\projects\清华山维\src\EPS.Data.Mgr\bin\Debug\EPS.Data.Mgr.pdb
+D:\projects\清华山维\src\EPS.Data.Mgr\obj\Debug\ResolveAssemblyReference.cache
+D:\projects\清华山维\src\EPS.Data.Mgr\obj\Debug\EPS.Data.Mgr.dll
+D:\projects\清华山维\src\EPS.Data.Mgr\obj\Debug\EPS.Data.Mgr.pdb

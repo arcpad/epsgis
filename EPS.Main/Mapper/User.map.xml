@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<sqlMap namespace="EntityModel" xmlns="http://ibatis.apache.org/mapping"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+	<alias>
+		<!--类的别名-->
+		<typeAlias alias="User" type="EPS.Data.User,EPS.Data"/>
+	</alias>
+
+	<resultMaps>
+		<!--UserName类与db表的映射-->
+		<resultMap id="resultMapUser" class="User">
+			<result property="objectId" column="objectId"/>
+			<result property="userName" column="名称"/>
+		</resultMap>
+	</resultMaps>
+
+	<statements>
+
+		<!--查询所有记录-->
+		<select id="GetAll" resultMap="resultMapUser">
+			<![CDATA[SELECT objectId,名称 FROM SUNWAY_USERINFO]]>
+		</select>
+
+		<!--查询单条记录-->
+		<select id="GetById" parameterClass="int" resultMap="resultMapUser" extends="GetAll">
+			<![CDATA[ where objectId = #value#  ]]>
+		</select>
+    
+	</statements>
+
+</sqlMap>
+

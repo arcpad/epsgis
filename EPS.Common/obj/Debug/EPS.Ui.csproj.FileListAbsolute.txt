@@ -1,0 +1,12 @@
+D:\projects\清华山维\src\EPS.Common\obj\Debug\ResolveAssemblyReference.cache
+D:\projects\清华山维\src\EPS.Common\obj\Debug\EPS.Ui.ColorButton.resources
+D:\projects\清华山维\src\EPS.Common\obj\Debug\EPS.Ui.ColorPicker.ColorChangedEventArgs.resources
+D:\projects\清华山维\src\EPS.Common\obj\Debug\EPS.Ui.ColorPicker.ColorPanelForm.resources
+D:\projects\清华山维\src\EPS.Common\obj\Debug\EPS.Ui.ColorPicker.ColorPanelWithCapture.resources
+D:\projects\清华山维\src\EPS.Common\obj\Debug\EPS.Ui.Loading.LoadingForm.resources
+D:\projects\清华山维\src\EPS.Common\obj\Debug\GenerateResource-ResGen.read.1.tlog
+D:\projects\清华山维\src\EPS.Common\obj\Debug\GenerateResource-ResGen.write.1.tlog
+D:\projects\清华山维\src\EPS.Common\bin\Debug\EPS.Ui.dll
+D:\projects\清华山维\src\EPS.Common\bin\Debug\EPS.Ui.pdb
+D:\projects\清华山维\src\EPS.Common\obj\Debug\EPS.Ui.dll
+D:\projects\清华山维\src\EPS.Common\obj\Debug\EPS.Ui.pdb
